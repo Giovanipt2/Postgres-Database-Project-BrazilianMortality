@@ -1,0 +1,19 @@
+mothers_education_level,cause_rank,cause_of_death,mothers_avg_age,cause_death_count,total_death_count,cause_percentage
+None,1,Septicemia bacteriana do recém-nascido,29.40,9,68,13.24
+None,2,Desconforto (angústia) respiratório(a) do recém-nascido,21.33,6,68,8.82
+None,3,Outras malformações congênitas do coração,29.75,4,68,5.88
+Elementary School,1,Desconforto (angústia) respiratório(a) do recém-nascido,26.19,124,1708,7.26
+Elementary School,2,Septicemia bacteriana do recém-nascido,28.25,111,1708,6.50
+Elementary School,3,Transtornos relacionados com a gestação de curta duração e peso baixo ao nascer não classificados em outra parte,24.59,101,1708,5.91
+Middle School,1,Desconforto (angústia) respiratório(a) do recém-nascido,26.56,198,2487,7.96
+Middle School,2,Septicemia bacteriana do recém-nascido,26.12,190,2487,7.64
+Middle School,3,Transtornos relacionados com a gestação de curta duração e peso baixo ao nascer não classificados em outra parte,24.19,151,2487,6.07
+High School,1,Septicemia bacteriana do recém-nascido,23.23,699,8216,8.51
+High School,2,Desconforto (angústia) respiratório(a) do recém-nascido,22.95,683,8216,8.31
+High School,3,Transtornos relacionados com a gestação de curta duração e peso baixo ao nascer não classificados em outra parte,22.16,541,8216,6.58
+Incomplete Higher Education,1,Desconforto (angústia) respiratório(a) do recém-nascido,23.93,1024,10949,9.35
+Incomplete Higher Education,2,Septicemia bacteriana do recém-nascido,24.57,1010,10949,9.22
+Incomplete Higher Education,3,Transtornos relacionados com a gestação de curta duração e peso baixo ao nascer não classificados em outra parte,23.76,714,10949,6.52
+Complete Higher Education,1,Desconforto (angústia) respiratório(a) do recém-nascido,29.02,324,3489,9.29
+Complete Higher Education,2,Septicemia bacteriana do recém-nascido,28.68,322,3489,9.23
+Complete Higher Education,3,"Feto e recém-nascido afetados por afecções maternas, não obrigatoriamente relacionadas com a gravidez atual",29.26,208,3489,5.96

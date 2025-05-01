@@ -1,0 +1,101 @@
+age,most_common_cause,deaths_from_cause,total_deaths_for_age,cause_percentage
+0,Desconforto (angústia) respiratório(a) do recém-nascido,581,35795,1.6231
+1,Pneumonia por microorganismo não especificada,479,7465,6.4166
+2,Pneumonia por microorganismo não especificada,236,2594,9.0979
+3,Pneumonia por microorganismo não especificada,180,1998,9.0090
+4,Pneumonia por microorganismo não especificada,122,1607,7.5918
+5,Pneumonia por microorganismo não especificada,84,1239,6.7797
+6,Pneumonia por microorganismo não especificada,57,1009,5.6492
+7,Neoplasia maligna do encéfalo,38,897,4.2363
+8,Pneumonia por microorganismo não especificada,42,886,4.7404
+9,Pneumonia por microorganismo não especificada,41,828,4.9517
+10,Afogamento e submersão em águas naturais,38,882,4.3084
+11,Paralisia cerebral,38,912,4.1667
+12,Afogamento e submersão em águas naturais,55,1029,5.3450
+13,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,100,1269,7.8802
+14,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,235,1669,14.0803
+15,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,582,2412,24.1294
+16,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,944,3192,29.5739
+17,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1331,3895,34.1720
+18,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1476,4529,32.5900
+19,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1434,4930,29.0872
+20,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1700,5389,31.5457
+21,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1695,5714,29.6640
+22,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1603,5576,28.7482
+23,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1569,5611,27.9629
+24,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1358,5544,24.4949
+25,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1320,5548,23.7924
+26,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1277,5519,23.1382
+27,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1300,5741,22.6441
+28,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1233,6089,20.2496
+29,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1139,5872,19.3971
+30,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,1012,5992,16.8892
+31,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,961,5990,16.0434
+32,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,918,5978,15.3563
+33,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,792,5919,13.3806
+34,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,700,6037,11.5952
+35,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,678,6238,10.8689
+36,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,618,6065,10.1896
+37,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,543,6396,8.4897
+38,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,518,6526,7.9375
+39,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,451,6864,6.5705
+40,Agressão por meio de disparo de outra arma de fogo ou de arma não especificada,451,7228,6.2396
+41,Infarto agudo do miocárdio,402,7718,5.2086
+42,Infarto agudo do miocárdio,453,8076,5.6092
+43,Infarto agudo do miocárdio,480,8446,5.6832
+44,Infarto agudo do miocárdio,548,9081,6.0346
+45,Infarto agudo do miocárdio,638,9541,6.6869
+46,Infarto agudo do miocárdio,789,10359,7.6166
+47,Infarto agudo do miocárdio,811,10735,7.5547
+48,Infarto agudo do miocárdio,859,10963,7.8354
+49,Infarto agudo do miocárdio,943,11251,8.3815
+50,Infarto agudo do miocárdio,1013,12080,8.3858
+51,Infarto agudo do miocárdio,1043,12332,8.4577
+52,Infarto agudo do miocárdio,1226,13474,9.0990
+53,Infarto agudo do miocárdio,1206,13393,9.0047
+54,Infarto agudo do miocárdio,1372,14181,9.6749
+55,Infarto agudo do miocárdio,1397,14391,9.7075
+56,Infarto agudo do miocárdio,1478,15013,9.8448
+57,Infarto agudo do miocárdio,1485,15148,9.8033
+58,Infarto agudo do miocárdio,1588,15783,10.0615
+59,Infarto agudo do miocárdio,1679,15881,10.5724
+60,Infarto agudo do miocárdio,1705,16657,10.2359
+61,Infarto agudo do miocárdio,1745,16564,10.5349
+62,Infarto agudo do miocárdio,1728,17351,9.9591
+63,Infarto agudo do miocárdio,1779,17468,10.1843
+64,Infarto agudo do miocárdio,1803,17358,10.3871
+65,Infarto agudo do miocárdio,1806,18125,9.9641
+66,Infarto agudo do miocárdio,1880,18803,9.9984
+67,Infarto agudo do miocárdio,1927,19265,10.0026
+68,Infarto agudo do miocárdio,1849,19030,9.7162
+69,Infarto agudo do miocárdio,1941,19860,9.7734
+70,Infarto agudo do miocárdio,2127,21991,9.6721
+71,Infarto agudo do miocárdio,2087,21845,9.5537
+72,Infarto agudo do miocárdio,1990,21916,9.0801
+73,Infarto agudo do miocárdio,2043,22511,9.0756
+74,Infarto agudo do miocárdio,2209,24087,9.1709
+75,Infarto agudo do miocárdio,2049,23439,8.7418
+76,Infarto agudo do miocárdio,1994,22559,8.8390
+77,Infarto agudo do miocárdio,1872,23481,7.9724
+78,Infarto agudo do miocárdio,1933,23988,8.0582
+79,Infarto agudo do miocárdio,1998,25076,7.9678
+80,Infarto agudo do miocárdio,1902,25306,7.5160
+81,Infarto agudo do miocárdio,1860,24234,7.6752
+82,Infarto agudo do miocárdio,1755,23781,7.3798
+83,Infarto agudo do miocárdio,1658,23210,7.1435
+84,Infarto agudo do miocárdio,1611,22675,7.1047
+85,Pneumonia por microorganismo não especificada,1580,21469,7.3594
+86,Pneumonia por microorganismo não especificada,1441,19742,7.2992
+87,Pneumonia por microorganismo não especificada,1413,18385,7.6856
+88,Pneumonia por microorganismo não especificada,1365,16460,8.2928
+89,Pneumonia por microorganismo não especificada,1330,14976,8.8809
+90,Pneumonia por microorganismo não especificada,1287,13865,9.2824
+91,Pneumonia por microorganismo não especificada,1092,12269,8.9005
+92,Pneumonia por microorganismo não especificada,1088,10803,10.0713
+93,Pneumonia por microorganismo não especificada,936,9179,10.1972
+94,Pneumonia por microorganismo não especificada,883,8198,10.7709
+95,Pneumonia por microorganismo não especificada,739,6791,10.8820
+96,Pneumonia por microorganismo não especificada,546,5179,10.5426
+97,Pneumonia por microorganismo não especificada,433,4145,10.4463
+98,Pneumonia por microorganismo não especificada,325,3081,10.5485
+99,Pneumonia por microorganismo não especificada,296,2520,11.7460

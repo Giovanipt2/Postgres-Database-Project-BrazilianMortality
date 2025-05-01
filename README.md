@@ -62,11 +62,11 @@ This project aims to implement a PostgreSQL database populated via Python/psycop
 - Formulate and execute five non-trivial SQL queries to extract insights.
 
 **Non-trivial queries:**  
-1. _Estimates population, total deaths, and mortality rate (per 1000) by state_  
-2. _Finds the most common cause of death (modal cause) for each age_  
-3. _Analyzes death statistics by GDP per capita decile_  
-4. _Gets the top 3 causes of death (under age 5) by mother's education level_  
-5. _Analyzes non-external mortality rates grouped by population per health unit_
+1. _Estimate population, total deaths, and mortality rate (per 1000) by state_  
+2. _Find the most common cause of death (modal cause) for each age_  
+3. _Analyze death statistics by GDP per capita decile_  
+4. _Get the top 3 causes of death (under age 5) by mother's education level_  
+5. _Analyze non-external mortality rates grouped by population per health unit_
 
 ---
 

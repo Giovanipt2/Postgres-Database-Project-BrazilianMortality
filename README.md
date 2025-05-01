@@ -5,12 +5,12 @@
 
 ---
 
-## 📖 Overview  
+## Overview  
 This repository contains the implementation of a PostgreSQL database for analyzing Brazilian mortality, health, and economic indicators at the municipal and state levels. Data is loaded via Python/psycopg2, with a fully normalized schema and scripts for preprocessing, loading, and querying.
 
 ---
 
-## 📑 Table of Contents  
+## Table of Contents  
 
 - [Overview](#overview)  
 - [Team Members](#team-members)  
@@ -31,14 +31,14 @@ This repository contains the implementation of a PostgreSQL database for analyzi
 
 ---
 
-## 👥 Team Members  
+## Team Members  
 - [**Giovani Mambrim Leme (215041)**](https://github.com/Giovanipt2)  
 - [**Pietro Fernandes Magaldi (236842)**](https://github.com/pietromagaldi)  
 - [**Adriano Ribeiro F. Campos (173253)**](https://github.com/AdrianoCampos05)  
 
 ---
 
-## 🗄 Database Schemas  
+## Database Schemas  
 The core of this project is the relational database designed to integrate the different datasets. Below are visualizations of the conceptual and relational models:
 
 ### Conceptual Model  
@@ -53,7 +53,7 @@ The core of this project is the relational database designed to integrate the di
 
 ---
 
-## 🎯 Project Goals  
+## Project Goals  
 This project aims to implement a PostgreSQL database populated via Python/psycopg2 with Brazilian data on mortality, health, and GDP of cities and states. The main objectives are:
 
 - Design a normalized database schema that captures deaths, causes, basic health units, municipalities, states, and demographic details.  
@@ -70,7 +70,7 @@ This project aims to implement a PostgreSQL database populated via Python/psycop
 
 ---
 
-## 📂 Datasets  
+## Datasets  
 ### Raw Data  
 The following raw datasets were used and are available in the `datasets/` folder:
 
@@ -93,7 +93,7 @@ After cleaning and transforming raw inputs, the following files in `preprocessed
 
 ---
 
-## 💻 Technology Stack  
+## Technology Stack  
 - **Database**: PostgreSQL (tested with version 14+)  
 - **Language**: Python 3.x  
 - **Libraries**:  
@@ -104,7 +104,7 @@ After cleaning and transforming raw inputs, the following files in `preprocessed
 
 ---
 
-## 🗂 Project Structure  
+## Project Structure  
 ```bash
 Postgres-Database-Project-BrazilianMortality/
 │
@@ -143,7 +143,7 @@ Postgres-Database-Project-BrazilianMortality/
 │   └── queries.ipynb  # Contains the five project queries
 └── README.md  # This file
 ```
-## ⚙️ Setup and Usage
+## Setup and Usage
 
 ### Prerequisites
 1. Python 3.x

@@ -110,7 +110,3 @@ Links to the outputs for each query are available below:
 
 - **Basic Health Units (UBS2)**  
   https://dados.gov.br/dados/conjuntos-dados/unidades-basicas-de-saude-ubs2
-
----
-
-*This README follows the template from [Matheus-F-Scatolin/Postgres-Database-Project-FoodSecurity](https://github.com/Matheus-F-Scatolin/Postgres-Database-Project-FoodSecurity).*

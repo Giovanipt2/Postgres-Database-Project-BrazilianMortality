@@ -8,9 +8,25 @@
 
 ## 👥 Team Members
 
-*<Add team member names here>*
+- **Giovani Mambrim Leme** (215041) [GitHub](https://github.com/Giovanipt2)  
+- **Pietro Fernandes Magaldi** (236842) [GitHub](https://github.com/pietromagaldi)  
+- **Adriano Ribeiro F. Campos** (173253) [GitHub](https://github.com/AdrianoCampos05)
 
-*<Add conceptual and logical model images here>*
+---
+
+## 🗄 Database Schemas
+
+### Conceptual Model
+
+<p align="center">
+  _<Insert conceptual model diagram here>_
+</p>
+
+### Logical Model
+
+<p align="center">
+  _<Insert logical model diagram here>_
+</p>
 
 ---
 
@@ -39,34 +55,22 @@ This project aims to implement a PostgreSQL database populated via Python/psycop
 The following raw datasets were used and are available in the `datasets` folder:
 
 - **Mortalidade_Geral_2010.csv**: General mortality records for Brazil in 2010.  
-- **PIB_per_capita.csv**: GDP per capita for Brazilian municipalities.  
-- **Municipio_Codigo_Descricao.csv**: Municipality names and IBGE city codes.  
-- **UBS2.csv**: Basic Health Unit registry.
+- **vw_pib_percapita.csv**: GDP per capita for Brazilian municipalities (view).  
+- **IBGE_cidades_2010.csv**: Municipality names and IBGE city codes.  
+- **Unidades_Basicas_Saude-UBS.csv**: Basic Health Unit registry.  
+- **CID-10-CATEGORIAS.csv**: ICD-10 categories descriptions.
 
 ### Preprocessed Data
 
-After cleaning and transforming raw inputs, the following files in `preprocessed_datasets` were loaded into the database:
+After cleaning and transforming raw inputs, the following files in `preprocessed_datasets` were loaded into the database (each corresponds to one table in the logical model):
 
-- **mortalidade_geral_2010_preprocessed.csv**: Standardized date/time formats, null-handling, and code normalization.  
-- **pib_per_capita_preprocessed.csv**: Numeric casting and alignment with IBGE codes.  
-- **municipio_codigo_nome_preprocessed.csv**: Trimmed names and joined supplementary codes.  
-- **ubs2_preprocessed.csv**: Filtered active units and validated city codes.
-
----
-
-## 🗄 Database Schema
-
-### Conceptual Model
-
-<p align="center">
-  _<Insert conceptual model diagram here>_
-</p>
-
-### Logical Model
-
-<p align="center">
-  _<Insert logical model diagram here>_
-</p>
+- **Death.csv**  
+- **DeathCause.csv**  
+- **Deceased.csv**  
+- **Mother.csv**  
+- **BasicHealthUnit.csv**  
+- **State.csv**  
+- **Municipality.csv**
 
 ---
 
@@ -110,3 +114,7 @@ Links to the outputs for each query are available below:
 
 - **Basic Health Units (UBS2)**  
   https://dados.gov.br/dados/conjuntos-dados/unidades-basicas-de-saude-ubs2
+
+---
+
+*This README follows the template from [Matheus-F-Scatolin/Postgres-Database-Project-FoodSecurity](https://github.com/Matheus-F-Scatolin/Postgres-Database-Project-FoodSecurity).*

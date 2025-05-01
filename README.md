@@ -1,16 +1,21 @@
 # Postgres Database Project: Brazilian Mortality
 
-**Course**: MC536 Databases
-
+**Course**: MC536 Databases  
 **Repository**: Postgres-Database-Project-BrazilianMortality
+
+---
+
+## 📖 Overview
+
+This repository contains the implementation of a PostgreSQL database for analyzing Brazilian mortality, health, and economic indicators at the municipal and state levels. Data is loaded via Python/psycopg2, with a fully normalized schema and scripts for preprocessing, loading, and querying.
 
 ---
 
 ## 👥 Team Members
 
-- **Giovani Mambrim Leme** (215041) [GitHub](https://github.com/Giovanipt2)  
-- **Pietro Fernandes Magaldi** (236842) [GitHub](https://github.com/pietromagaldi)  
-- **Adriano Ribeiro F. Campos** (173253) [GitHub](https://github.com/AdrianoCampos05)
+- [**Giovani Mambrim Leme (215041)**](https://github.com/Giovanipt2)  
+- [**Pietro Fernandes Magaldi (236842)**](https://github.com/pietromagaldi)  
+- [**Adriano Ribeiro F. Campos (173253)**](https://github.com/AdrianoCampos05)
 
 ---
 

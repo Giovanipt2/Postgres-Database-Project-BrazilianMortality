@@ -43,13 +43,13 @@ The core of this project is the relational database designed to integrate the di
 
 ### Conceptual Model  
 <div align="center">
-<img width="80%" alt="Method Overview" src="models/Conceptual_Model.png">
+<img width="70%" alt="Method Overview" src="models/Conceptual_Model.png">
 </div>
 
 
 ### Logical (Relational) Model  
 <div align="center">
-<img width="80%" alt="Method Overview" src="models/Logical_Model.png">
+<img width="70%" alt="Method Overview" src="models/Logical_Model.png">
 </div>
 
 ---

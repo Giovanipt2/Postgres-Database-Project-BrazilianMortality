@@ -23,8 +23,6 @@ This repository contains the implementation of a PostgreSQL database for analyzi
 - [Project Structure](#project-structure)  
 - [Setup and Usage](#setup-and-usage)  
   - [Prerequisites](#prerequisites)  
-  - [Database Setup](#database-setup)  
-  - [Running](#running)  
 - [Analysis and Queries](#analysis-and-queries)  
 - [Results](#results)
 

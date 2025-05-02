@@ -6,7 +6,7 @@
 ---
 
 ## Overview  
-This repository contains the implementation of a PostgreSQL database for analyzing Brazilian mortality, health, and economic indicators at the municipal and state levels. Data is loaded via Python/psycopg2, with a fully normalized schema and scripts for preprocessing, loading, and querying.
+This repository contains the implementation of a PostgreSQL database for analyzing Brazilian mortality, health, and economic indicators at the municipal and state levels, which are directly related to the "Good Health and Well-Being" Sustainable Development Goal. Data is loaded via Python/psycopg2, with a fully normalized schema and scripts for preprocessing, loading, and querying.
 
 ---
 

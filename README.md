@@ -25,9 +25,8 @@ This repository contains the implementation of a PostgreSQL database for analyzi
   - [Prerequisites](#prerequisites)  
   - [Database Setup](#database-setup)  
   - [Running](#running)  
-- [Analysis & Queries](#analysis--queries)  
-- [Results](#results)  
-- [References](#references)  
+- [Analysis and Queries](#analysis-and-queries)  
+- [Results](#results)
 
 ---
 
@@ -72,6 +71,14 @@ This project aims to implement a PostgreSQL database populated via Python/psycop
 ---
 
 ## Datasets  
+### Sources
+The data used in was obtained from the following sources:
+
+- [Sistema de Informação sobre Mortalidade – SIM](https://dados.gov.br/dados/conjuntos-dados/sim-1979-2019)
+- [Produto Interno Bruto per capita](https://dados.gov.br/dados/conjuntos-dados/cgeo_vw_pib_percapita)
+- [Códigos dos municípios IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
+- [Unidades Básicas de Saúde - UBS](https://dados.gov.br/dados/conjuntos-dados/unidades-basicas-de-saude-ubs2)
+- [CID-10](http://www2.datasus.gov.br/cid10/V2008/descrcsv.htm#:~:text=CID%2D10%2DSUBCATEGORIAS.,CID%2DO%2DGRUPOS)
 ### Raw Data  
 The following raw datasets were used and are available in the `datasets/` folder:
 
@@ -129,12 +136,19 @@ Postgres-Database-Project-BrazilianMortality/
 │   ├── Conceptual_Model.png
 │   └── Logical_Model.png
 │
+├── queries/  # Individual queries 
+│   ├── cause_by_mothers_education.sql
+│   ├── death_cause_by_age.sql
+│   ├── life_expectancy_by_gdp.sql
+│   ├── mortality_by_health_unit_density.sql
+│   └── mortality_by_state.sql
+│
 ├── results/  # Output CSV files from analytical queries
-│   ├── query_1_result.csv
-│   ├── query_2_result.csv
-│   ├── query_3_result.csv
-│   ├── query_4_result.csv
-│   └── query_5_result.csv
+│   ├── cause_by_mothers_education.csv
+│   ├── death_cause_by_age.csv
+│   ├── life_expectancy_by_gdp.csv
+│   ├── mortality_by_health_unit_density.csv
+│   └── mortality_by_state.csv
 │
 ├── database_creation_and_queries.ipynb  # Jupyter notebook for DB creation, data loading, and querying
 ├── preprocessing.ipynb  # Jupyter notebook for preprocessing raw data
@@ -154,3 +168,17 @@ Postgres-Database-Project-BrazilianMortality/
 ```bash
 pip install psycopg2-binary pandas jupyterlab ipykernel>=6
 ```
+
+## Analysis and Queries
+Data analysis was done through SQL queries, which can be executed with the [`queries.ipynb`](./python/queries.ipynb) notebook. Each query can also be found separately in [`/queries`](./queries). The queries used were:
+
+1.  [Mortality Rate by State](./queries/mortality_by_state.sql)
+2.  [Life Expectancy by GDP per Capita](./queries/life_expectancy_by_gdp.sql)
+3.  [Cause of Death by Age](./queries/death_cause_by_age.sql)
+4.  [Child Mortality Causes by Mother's Level of Education](./queries/cause_by_mothers_education.sql)
+5.  [Mortality by Healthcare Unit Concentration](./queries/mortality_by_health_unit_density.sql)
+
+Further information about each query may be found in the `queries.ipynb` notebook, as well as in their specific `.sql` file.
+
+## Results
+The results of each query may be found in CSV format in the [`/results`](./results) directory. To reproduce these results, simply run the [`queries.ipynb`](./python/queries.ipynb) notebook up to the `Executing queries and saving results as csv` section. Don't forget to include the database password in the `Preparations` section.

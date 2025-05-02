@@ -42,14 +42,15 @@ This repository contains the implementation of a PostgreSQL database for analyzi
 The core of this project is the relational database designed to integrate the different datasets. Below are visualizations of the conceptual and relational models:
 
 ### Conceptual Model  
-<p align="center">  
-  _<Insert conceptual model diagram here>_  
-</p>
+<div align="center">
+<img width="80%" alt="Method Overview" src="models/Conceptual_Model.jpg">
+</div>
+
 
 ### Logical (Relational) Model  
-<p align="center">  
-  _<Insert logical model diagram here>_  
-</p>
+<div align="center">
+<img width="80%" alt="Method Overview" src="models/Logical_Model.jpg">
+</div>
 
 ---
 

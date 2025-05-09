@@ -80,22 +80,22 @@ The data used in was obtained from the following sources:
 ### Raw Data  
 The following raw datasets were used and are available in the `datasets/` folder:
 
-- **Mortalidade_Geral_2010.csv**: General mortality records for Brazil in 2010.  
-- **vw_pib_percapita.csv**: GDP per capita for Brazilian municipalities (view).  
-- **IBGE_cidades_2010.csv**: Municipality names and IBGE city codes.  
-- **Unidades_Basicas_Saude-UBS.csv**: Basic Health Unit registry.  
-- **CID-10-CATEGORIAS.csv**: ICD-10 categories descriptions.
+- `Mortalidade_Geral_2010.csv`: General mortality records for Brazil in 2010.  
+- `vw_pib_percapita.csv`: GDP per capita for Brazilian municipalities (view).  
+- `IBGE_cidades_2010.csv`: Municipality names and IBGE city codes.  
+- `Unidades_Basicas_Saude-UBS.csv`: Basic Health Unit registry.  
+- `CID-10-CATEGORIAS.csv`: ICD-10 categories descriptions.
 
 ### Preprocessed Data  
 After cleaning and transforming raw inputs, the following files in `preprocessed_datasets/` were loaded into the database (each corresponds to one table in the logical model):
 
-- **Death.csv**: Stores date, time, location, and other informations about the death.
-- **DeathCause.csv**: Stores the death cause cause and its description.
-- **Deceased.csv**: Stores the deceased's personal information.
-- **Mother.csv**: Stores the information of the deceased's mother.
-- **BasicHealthUnit.csv**: Stores information on basic health units in Brazilian cities
-- **State.csv**: Stores information about Brazilian states 
-- **Municipality.csv**: Stores information about Brazilian cities, their GDP and their GDP per capita
+- `Death.csv`: Stores date, time, location, and other informations about the death.
+- `DeathCause.csv`: Stores the death cause cause and its description.
+- `Deceased.csv`: Stores the deceased's personal information.
+- `Mother.csv`: Stores the information of the deceased's mother.
+- `BasicHealthUnit.csv`: Stores information on basic health units in Brazilian cities
+- `State.csv`: Stores information about Brazilian states 
+- `Municipality.csv`: Stores information about Brazilian cities, their GDP and their GDP per capita
 
 ---
 
@@ -166,9 +166,55 @@ Postgres-Database-Project-BrazilianMortality/
 ```bash
 pip install psycopg2-binary pandas jupyterlab ipykernel>=6
 ```
+    *(Note: `ipykernel` needed for Jupyter)*
+5.  **Clone Repository:** Clone this repository to your local machine.
+    ```bash
+    git clone <repository-url>
+    cd Postgres-Database-Project-BrazilianMortality
+    ```
+6.  **CSV Files:** Ensure the CSV files are present in the `/preprocessed_datasets` directory.
 
+### Database Setup
+
+1.  **Create Database:** Using `psql` or a tool like pgAdmin4, create a new PostgreSQL database. The default name used in the script is `projeto1`.
+    ```sql
+    CREATE DATABASE projeto1;
+    ```
+2. Configure Connection:
+Open the [`python/tables.ipynb`](./python/tables.ipynb). Locate the database connection parameters near the beginning of the script and update the DB_PASS variable with your actual PostgreSQL password. Adjust other parameters (user, host, port, dbname) if necessary.
+
+    ```python
+    # --- Database Connection Parameters ---
+    # !! IMPORTANT: Replace "pswd" with your actual PostgreSQL password !!
+    DB_NAME = "projeto1"
+    DB_USER = "postgres"
+    DB_PASS = "pswd" # <--- CHANGE THIS TO YOUR PASSWORD
+    DB_HOST = "localhost"
+    DB_PORT = "5432"
+    ```
+
+### Running the Code
+
+1.  **Start Jupyter:** Navigate to the repository directory in your terminal and launch Jupyter Lab or Notebook:
+    ```bash
+    jupyter lab
+    ```
+    or
+    ```
+    jupyter notebook
+    ```
+2.  **Open Notebook:** Open the [`python/tables.ipynb`](./python/tables.ipynb) notebook in Jupyter.
+3.  **Execute Cells:** Run the cells in the notebook sequentially.
+    *   The notebook will first connect to the database.
+    *   It will then execute the SQL DDL script to create the tables and constraints (using `IF NOT EXISTS` to be idempotent).
+    *   Next, it will read data from the CSV files in the `/preprocessed_datasets` directory and load it into the corresponding database tables. Progress messages will be printed.
+    *   Finally, it will execute the 5 predefined analytical SQL queries and display their results within the notebook (using pandas DataFrames).
+
+## Data Preprocessing
+
+The [`preprocessing.ipynb`](./preprocessing.ipynb) notebook details the steps taken to transform the original input files into the simplified format used for database loading. This involved selecting relevant columns, renaming columns, handling missing values (where appropriate), and potentially filtering data. Running this notebook is optional if the files in `/preprocessed_datasets` are already present and deemed correct.
 ## Analysis and Queries
-Data analysis was done through SQL queries, which can be executed with the [`queries.ipynb`](./python/queries.ipynb) notebook. Each query can also be found separately in [`/queries`](./queries). The queries used were:
+Data analysis was done through SQL queries, which can be executed with the [`queries.ipynb`](./queries.ipynb) notebook. The queries used were:
 
 1.  [Mortality Rate by State](./queries/mortality_by_state.sql)
 2.  [Life Expectancy by GDP per Capita](./queries/life_expectancy_by_gdp.sql)
@@ -179,4 +225,11 @@ Data analysis was done through SQL queries, which can be executed with the [`que
 Further information about each query may be found in the `queries.ipynb` notebook, as well as in their specific `.sql` file.
 
 ## Results
-The results of each query may be found in CSV format in the [`/results`](./results) directory. To reproduce these results, simply run the [`queries.ipynb`](./python/queries.ipynb) notebook up to the `Executing queries and saving results as csv` section. Don't forget to include the database password in the `Preparations` section.
+
+The output/results generated by executing the 5 analytical SQL queries in the main notebook are saved as CSV files in the `/results` directory for easy inspection:
+
+*   [`cause_by_mother_education`](./results/cause_by_mother_education.csv)
+*   [`death_cause_by_age.csv`](./results/death_cause_by_age.csv)
+*   [`life_expctancy_by_gdp.csv`](./results/life_expctancy_by_gdp.csv)
+*   [`mortality_by_health_unit_density.csv`](./results/`mortality_by_health_unit_density.csv)
+*   [`mortality_by_state.csv`](./results/mortality_by_state.csv)

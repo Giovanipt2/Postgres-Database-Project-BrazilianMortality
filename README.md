@@ -89,13 +89,13 @@ The following raw datasets were used and are available in the `datasets/` folder
 ### Preprocessed Data  
 After cleaning and transforming raw inputs, the following files in `preprocessed_datasets/` were loaded into the database (each corresponds to one table in the logical model):
 
-- **Death.csv**  
-- **DeathCause.csv**  
-- **Deceased.csv**  
-- **Mother.csv**  
-- **BasicHealthUnit.csv**  
-- **State.csv**  
-- **Municipality.csv**
+- **Death.csv**: Stores date, time, location, and other informations about the death.
+- **DeathCause.csv**: Stores the death cause cause and its description.
+- **Deceased.csv**: Stores the deceased's personal information.
+- **Mother.csv**: Stores the information of the deceased's mother.
+- **BasicHealthUnit.csv**: Stores information on basic health units in Brazilian cities
+- **State.csv**: Stores information about Brazilian states 
+- **Municipality.csv**: Stores information about Brazilian cities, their GDP and their GDP per capita
 
 ---
 

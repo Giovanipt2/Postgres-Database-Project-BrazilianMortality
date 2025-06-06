@@ -132,7 +132,9 @@ Postgres-Database-Project-BrazilianMortality/
 │
 ├── models/  # Database model files
 │   ├── Conceptual_Model.png
-│   └── Logical_Model.png
+│   ├── Logical_Model.pgerd
+│   ├── Logical_Model.png
+│   └── Physical_Model.sql
 │
 ├── queries/  # Individual queries 
 │   ├── cause_by_mothers_education.sql
